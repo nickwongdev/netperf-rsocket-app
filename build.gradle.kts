@@ -27,6 +27,8 @@ val sourcesJar by tasks.registering(Jar::class) {
 dependencies {
     compile(kotlin("stdlib-jdk8"))
     compile("io.rsocket.kotlin:rsocket-core:0.9.6")
+    compile("io.rsocket.kotlin:rsocket-transport-netty:0.9.6")
+    compile("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.0")
 }
 
 tasks.withType<KotlinCompile> {
